@@ -4,7 +4,7 @@ A LangGraph agent that uses tool calling to perform arithmetic operations (add, 
 
 ## Demo
 
-![LangGraph Studio](agentic_workflow.png)
+![LangGraph Studio](images/agentic_workflow.png)
 
 The agent receives a natural language request, decides which tool to call, executes it, and returns the result.
 

@@ -1,5 +1,6 @@
-import os
-os.environ["ANTHROPIC_API_KEY"] =""
+from dotenv import load_dotenv
+load_dotenv()
+
 
 
 from langchain_anthropic import ChatAnthropic

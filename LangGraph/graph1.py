@@ -8,9 +8,9 @@ from langchain.messages import SystemMessage
 from typing import Literal
 from langgraph.graph import StateGraph, START, END
 import operator
+
 from langgraph.checkpoint.memory import InMemorySaver
 checkpointer = InMemorySaver()
-
 from dotenv import load_dotenv
 load_dotenv()
 

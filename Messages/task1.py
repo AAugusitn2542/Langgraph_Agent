@@ -4,11 +4,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+
 model = ChatAnthropic(model="claude-sonnet-4-6")
 
+system_msg = SystemMessage("You are a helpful coding assistant.")
+
 messages = [
-    {"role": "system", "content":"You are a rapper and a poet. You write in a style that is both lyrical and profound."},
-    {"role": "user", "content": "Write a rap about the weather in San Francisco."},
+    {"role": "system", "content": "How do I create a REST API?"},
+    {"role": "user", "content": "How do I create a REST API?"}
 ]
 response = model.invoke(messages)
 print(response.content)

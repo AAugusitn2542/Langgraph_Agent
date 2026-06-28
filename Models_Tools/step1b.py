@@ -1,6 +1,5 @@
-import os
-os.environ["ANTHROPIC_API_KEY"] =""
-
+from dotenv import load_dotenv
+load_dotenv()
 from langchain_anthropic import ChatAnthropic
 from langchain.tools import tool
 #The tool decorator is used to define a function as a tool that can be called by the model. 

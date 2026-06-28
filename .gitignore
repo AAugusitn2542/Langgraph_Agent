@@ -1,4 +1,7 @@
+__pycache__/
+*.pyc
 .env
 notes.txt
 Introduction.txt
 roadmap.txt
+/LangGraph/notes.txt

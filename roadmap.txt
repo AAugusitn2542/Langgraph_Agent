@@ -1,29 +1,49 @@
-Realistic Path to Getting Hired as an AI Engineer
+AI Engineer Roadmap
 ====================================================
 
-Phase 1 - LangGraph Basics (1-2 weeks)
-- Learn graph concepts: nodes, edges, state
-- Build simple graphs
-- Understand how LangGraph differs from create_agent
+1. Baseline Timelines by Background
 
-Phase 2 - Build Email Agent End-to-End (2-3 weeks)
-- Real tools (Gmail API or similar)
-- Multi-turn conversations with memory
-- Handle edge cases, not just the happy path
+From scratch (no programming)        8-12 months
+From software engineering            3-5 months
+From data science / ML               3-6 months
+From data analysis                   6-9 months
 
-Phase 3 - Deploy & Document
-- Get it running somewhere public (not just localhost)
-- Clean GitHub repo with a good README
-- LangSmith for tracing and debugging
+My situation: transitioning with some programming background → estimated 6-10 months
+Current status: Already in Phase 2 (skipped most of Phase 1) due to previous knowledge
 
-Phase 4 - Apply
-- Target: AI Engineer, ML Engineer, or LLM Engineer roles
-- Junior positions and internships
-- Your email agent is your portfolio piece
+====================================================
 
-What separates you from other new grads:
-- You understand WHY things work, not just copy-paste
-- You can debug when things break
-- You shipped something real that solves an actual problem
+Phase 1: Python and Developer Foundations (1-2 months) ✅ MOSTLY DONE
+- Python programming fundamentals: variables, data types, functions
+- Software engineering basics: Git, version control, project organization
+- Build a small project and push to GitHub
 
-Timeline: 2-4 months to hireable
+Phase 2: LLM Fundamentals and AI App Development (2-3 months) ← YOU ARE HERE
+- Learn large language models (LLM) and APIs
+- Prompt engineering patterns, output control, and testing
+- LangChain: models, messages, tools, agents
+- LangGraph: nodes, edges, state, memory
+- Build end-to-end AI applications (email agent)
+
+Phase 3: Data, Math, and Machine Learning (3-4 months)
+- Mathematics: linear algebra, probability, and statistics
+- Machine learning fundamentals: supervised/unsupervised learning
+- Deep learning: CNNs, RNNs, Transformers
+- Hands-on projects: classification, prediction, neural networks
+
+Phase 4: Embeddings, RAG, Agents, and Production Deployment (2-3 months)
+- Vector databases, embeddings, retrieval-augmented generation (RAG)
+- AI agents: ReAct loop, tool use, multi-agent orchestration
+- Deployment: FastAPI, Docker, CI/CD for ML pipelines
+- Capstone projects: knowledge base search, multi-functional AI agents
+
+====================================================
+
+Portfolio and Job Preparation (Ongoing)
+- Build projects that solve real problems
+- Publish code: GitHub, LinkedIn, demo apps
+- Focus on real-world implementation, not just theory
+- Interview prep: coding challenges, AI system design, business impact
+
+
+Target salary range (2026): $130K-$250K in the U.S.

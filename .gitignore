@@ -4,4 +4,6 @@ __pycache__/
 notes.txt
 Introduction.txt
 roadmap.txt
+credentials.json
+token.json
 /LangGraph/notes.txt

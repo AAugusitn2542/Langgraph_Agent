@@ -1,7 +1,14 @@
 from dotenv import load_dotenv
+from typing import TypedDict, Literal
+from typing import Literal
+from langgraph.checkpoint.memory import MemorySaver
+from langgraph.graph import StateGraph, START, END
+from langgraph.types import interrupt, Command, RetryPolicy
+from langchain_anthropic import ChatAnthropic
+from langchain.messages import HumanMessage
 load_dotenv()
 
-from typing import TypedDict, Literal
+llm = ChatAnthropic(model="claude-sonnet-4-6")
 
 # Define the structure for email classification
 class EmailClassification(TypedDict):
@@ -27,14 +34,6 @@ class EmailAgentState(TypedDict):
     draft_response: str | None
     messages: list[str] | None
 
-
-from typing import Literal
-from langgraph.graph import StateGraph, START, END
-from langgraph.types import interrupt, Command, RetryPolicy
-from langchain_anthropic import ChatAnthropic
-from langchain.messages import HumanMessage
-
-llm = ChatAnthropic(model="claude-sonnet-4-6")
 
 def read_email(state: EmailAgentState) -> dict:
     """Extract and parse email content"""
@@ -195,7 +194,6 @@ def send_reply(state: EmailAgentState) -> dict:
     return {}
 
 
-from langgraph.checkpoint.memory import MemorySaver
 
 workflow = StateGraph(EmailAgentState)
 
